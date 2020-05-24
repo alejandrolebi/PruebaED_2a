@@ -8,8 +8,11 @@ public class Persona{
 	
 	public Persona() {}
 	
-	/*
-	 * Documentar y crear test unitario
+	/**
+	 * Contructor de la clase persona con los diferentes atributos
+	 * @param String dni
+	 * @param String nombre
+	 * @param String apellido
 	 * */
 	public Persona(String dni, String nombre, String apellido1) {
 		this.dni = dni;
@@ -17,16 +20,18 @@ public class Persona{
 		this.apellido1 = apellido1;
 	}
 	
-	/*
-	 * Documentar y crear test unitario
+	/**
+	 * Metodo que devuelve el dni de la persona seleccionada
 	 * */
 	public String getDni() {
 		return dni;
 	}
 	
 	
-	/*
-	 * Documentar y crear test unitario
+	/**
+	 * Metodo que permite cambiar y estabalecer un nuevo dni para una persona en concreto 
+	 * @param String dni
+	 * @throws Exception si el ultimo caracter del String dni no es una letra
 	 * */
 	public void setDni(String dni) throws Exception {
 		//comprobacion de si el ultimo caracter es una letra
@@ -37,29 +42,29 @@ public class Persona{
 		}
 	}
 	
-	/*
-	 * Documentar y crear test unitario
+	/**
+	 * Metodo que permite el nombre de la persona seleccionada
 	 * */
 	public String getNombre() {
 		return nombre;
 	}
 	
-	/*
-	 * Documentar y crear test unitario
+	/**
+	 * Metodo que te permite establecer un nuevo nombre para una persona 
 	 * */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 	
-	/*
-	 * Documentar y crear test unitario
+	/**
+	 * Pemrite obtener el apellido de una persona
 	 * */
 	public String getApellido1() {
 		return apellido1;
 	}
 	
-	/*
-	 * Documentar y crear test unitario
+	/**
+	 *Permite cambiar al apellido de una persona 
 	 * */
 	
 	
